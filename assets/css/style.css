@@ -253,7 +253,44 @@ a.btn-item5 {
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
+  background-image: url("https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc2f42d5a5ed97dab707e7e_UX.png");
+  background-position: 50% 100%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+
+  position: relative;
 }
+
+.minicaps {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    padding: 0 10px;
+    background-color: #fa684f;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.item7 > h3 {
+    display: block;
+    max-width: 280px;
+    margin: auto;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    color: #fff;
+    text-align: center;
+}
+
+img.img-7 {
+    position: relative;
+    left: -7%;
+    width: 90%;
+}
+
 .item8 {
   background-color: #38D5F4;
   grid-column-start: 1;
@@ -283,6 +320,13 @@ a.btn-item5 {
   grid-row-start: 4;
   grid-row-end: 5;
 }
+
+.minicaps.i9 {
+    background-color: #7bc424;
+    color: #fff;
+    position: static;
+}
+
 .item10 {
   background-color: #2C2C2C;
   grid-column-start: 3;
@@ -290,4 +334,14 @@ a.btn-item5 {
   grid-row-start: 4;
   grid-row-end: 5;
   overflow: hidden;
+}
+
+.img-10 {
+    position: relative;
+    left: -82px;
+}
+
+.heading-10 {
+    width: 34%;
+    color: #fff;
 }
