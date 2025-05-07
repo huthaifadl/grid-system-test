@@ -19,8 +19,6 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50vh 50vh 50vh 25vh;
   /* height: 100; */
 }
 
@@ -52,7 +50,7 @@ h1 {
     font-weight: 400;
   }
 
-  h2 {
+h2 {
     font-size: 32px;
     line-height: 36px;
     margin-top: 20px;
@@ -124,10 +122,7 @@ a {
 
 .item1 {
   background-color: white;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+
 
   padding-left: 4%;
   padding-right: 4%;
@@ -139,18 +134,12 @@ a {
 
 .item2 {
   background-color: #F7F8F9;
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 2;
+
 }
 
 .item3 {
   background-color: orangered;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+
 
   color: #fff;
   font-weight: bold;
@@ -162,10 +151,7 @@ a {
 
 .item4 {
   background-color: white;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
+
   
   padding-top: 68px;
   padding-right: 4%;
@@ -192,13 +178,8 @@ a {
 }
 
 .item5 {
-  background-color: #8F76BC;
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 4;
-
-  color: #fff;
+    background-color: whitesmoke;
+    color: #fff;
 }
 
 .ciecle {
@@ -235,11 +216,9 @@ a.btn-item5 {
 }
 
 .item6 {
-  background-color: whitesmoke;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  background-color: #8F76BC;
+
+
 }
 
 .item6>img {
@@ -249,10 +228,6 @@ a.btn-item5 {
 
 .item7 {
   background-color: #93B6B7;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
   background-image: url("https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc2f42d5a5ed97dab707e7e_UX.png");
   background-position: 50% 100%;
   background-size: 80%;
@@ -293,10 +268,7 @@ img.img-7 {
 
 .item8 {
   background-color: #38D5F4;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 4;
-  grid-row-end: 5;
+
 }
 
 .div-block-8 {
@@ -315,10 +287,6 @@ img.img-7 {
 
 .item9 {
   background-color: whitesmoke;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
 }
 
 .minicaps.i9 {
@@ -329,10 +297,6 @@ img.img-7 {
 
 .item10 {
   background-color: #2C2C2C;
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 4;
-  grid-row-end: 5;
   overflow: hidden;
 }
 
@@ -344,4 +308,111 @@ img.img-7 {
 .heading-10 {
     width: 34%;
     color: #fff;
+}
+
+
+/* ***************************************************************** */
+
+
+
+.container {
+    height: 100vh;
+    display: grid;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "first-item first-item"
+        "second-item second-item"
+        "third-item furth-item"
+        "fifth-item sixth-item"
+        "seventh-item eighth-item"
+        "ninth-item eighth-item"
+        "tenth-item tenth-item"
+        "eleventh-item eleventh-item"
+        ;
+    }
+
+    .item1 {
+        grid-area: first-item;
+    }
+    .item2 {
+        grid-area: second-item;
+    }
+    .item3 {
+        grid-area: third-item;
+    }
+    .item4 {
+        grid-area: furth-item;
+    }
+    .item5 {
+        grid-area: fifth-item;
+    }
+    .item6 {
+        grid-area: sixth-item;
+    }
+    .item7 {
+        grid-area: seventh-item;
+    }
+    .item8 {
+        grid-area: eighth-item;
+    }
+    .item9 {
+        grid-area: ninth-item;
+    }
+    .item10 {
+        grid-area: tenth-item;
+    }
+    .item11 {
+        grid-area: eleventh-item;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "i1st i1st i2ed i2ed"
+        "i3ed i4th i4th i6th"
+        "i5th i7th i7th i6th"
+        "i8th i9th i10th i10th"
+        ;
+    }
+
+    .item1 {
+        grid-area: i1st;
+    }
+    .item2 {
+        grid-area: i2ed;
+    }
+    .item3 {
+        grid-area: i3ed;
+    }
+    .item4 {
+        grid-area: i4th;
+    }
+    .item5 {
+        grid-area: i5th;
+    }
+    .item6 {
+        grid-area: i6th;
+    }
+    .item7 {
+        grid-area: i7th;
+    }
+    .item8 {
+        grid-area: i8th;
+    }
+    .item9 {
+        grid-area: i9th;
+    }
+    .item10 {
+        grid-area: i10th;
+    }
+    .item11 {
+        grid-area: i11th;
+    }
 }
